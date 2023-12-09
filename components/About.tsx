@@ -16,7 +16,7 @@ const About = () => {
         <SectionHeading>About me</SectionHeading>
         <p className="mb-3">
         After graduating from high school, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
+        passion for programming. I enrolled in a coding bootcamp and learned&nbsp;
         <span className="font-medium">full-stack web development</span>.&nbsp;
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
