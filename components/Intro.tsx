@@ -59,10 +59,10 @@ const Intro = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Caleb.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
+        <span className="font-bold">Hello, I&apos;m Caleb.</span> I&apos;m a&nbsp;
+        <span className="font-bold">full-stack developer</span> with&nbsp;
         <span className="font-bold">4 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
+        building <span className="italic">sites & apps</span>. My focus is&nbsp;
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
 
@@ -82,7 +82,7 @@ const Intro = () => {
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
+          Contact me here&nbsp;
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
@@ -91,7 +91,7 @@ const Intro = () => {
           href="/CV.pdf"
           download
         >
-          Download CV{" "}
+          Download CV&nbsp;
           <LuHardDriveDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
