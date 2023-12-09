@@ -10,6 +10,7 @@ import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const [data, setData] = React.useState<any>({input: "", textArea: ""});
 
   return (
     <motion.section
@@ -50,12 +51,15 @@ export default function Contact() {
           }
 
           toast.success("Email sent successfully!");
+          setData({input: "", textArea: ""});
         }}
       >
         <input
           className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"
           type="email"
+          value={data.input}
+          onChange={(e) => setData({...data, input: e.target.value})}
           required
           maxLength={500}
           placeholder="Your email"
@@ -63,6 +67,8 @@ export default function Contact() {
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
+          value={data.textArea}
+          onChange={(e) => setData({...data, textArea: e.target.value})}
           placeholder="Your message"
           required
           maxLength={5000}
