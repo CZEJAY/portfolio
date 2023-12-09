@@ -28,7 +28,7 @@ const Intro = () => {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
+              src="https://utfs.io/f/8cdf78c8-cdb6-4d34-b641-88d2768579f1-i9n0x1.41.14_1c3ebb2b.jpg"
               alt="caleb portrait"
               width="192"
               height="192"
